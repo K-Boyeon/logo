@@ -1,0 +1,123 @@
+/* COMMON */
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+img{
+    display: block;
+    box-sizing: border-box;
+}
+.section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.title{
+    position: absolute;
+    height: 20%;
+}
+.title h1{
+    color: #d4a373;
+    font-size: 150px;
+}
+.title h2{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    font-size: 60px;
+}
+
+/* INTRO */
+.intro{
+    position: relative;
+    height: 100%;
+    background: #d4a373;
+    overflow: hidden;
+}
+.intro .circle{
+    position: absolute;
+    left: 0;
+    width: 1535px;
+    height: 1535px;
+    border-radius: 50%;
+}
+
+.intro .one{
+    top: 0;
+    background: #cec69c;
+    opacity:1;
+}
+.intro .two{
+    bottom: 0;
+    background: #efd7b2;
+    opacity: 0.7;
+}
+.intro img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+}
+
+
+/* LOGO INDENTITY */
+.identity .type1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+}
+.identity .type1 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.identity  .container .logo{
+    width: 300px;
+    height: 300px;
+}
+.identity .container .logo img{
+    width: 200px;
+    height: 200px;
+    margin-left: 55px;
+}
+.identity .container .logo .text{
+    font-size: 30px;
+    margin-top: 50px;
+}   
+.identity .container .logo .text p{
+    text-align: center;
+}
+.identity .content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    background: coral;
+}
+.identity .content p{
+    height: 20%;
+    background: chartreuse;
+}
+
+
+/* SYMBOL CONSTRUCTION */
+.contruction .img{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 600px;
+    height: 600px;
+}
+.contruction .note{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+}
