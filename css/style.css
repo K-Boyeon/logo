@@ -22,18 +22,36 @@ img{
 .title h1{
     color: #d4a373;
     font-size: 150px;
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    -webkit-transition: opacity 0.4s, -webkit-transform 0.6s;
+    transition: opacity 0.4s, transform 0.6s;
 }
 .title h2{
     position: absolute;
     top: 70%;
     left: 5%;
     font-size: 60px;
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    -webkit-transition: opacity 0.4s, -webkit-transform 0.6s;
+    transition: opacity 0.4s, transform 0.6s;
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+.title.active h1,
+.title.active h2{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
 }
 
 /* INTRO */
 .intro{
     position: relative;
-    height: 100%;
+    width: 100%;
     background: #d4a373;
     overflow: hidden;
 }
@@ -44,7 +62,6 @@ img{
     height: 1535px;
     border-radius: 50%;
 }
-
 .intro .one{
     top: 0;
     background: #cec69c;
@@ -60,7 +77,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 600px;
     height: 500px;
 }
 
@@ -99,11 +116,19 @@ img{
     top: 0;
     right: 0;
     width: 40%;
-    background: coral;
+}
+.identity .content .text-group{
+    position: absolute;
+    top: 20%;
+    left: 15%;
 }
 .identity .content p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
     height: 20%;
-    background: chartreuse;
+    font-size: 24px;
 }
 
 
@@ -120,4 +145,103 @@ img{
     top: 50%;
     left: 0;
     width: 50%;
+}
+
+
+/* COLOR */
+.color .img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 40%;
+}
+
+
+/* FINAL LOGO */
+.container{
+
+}
+.container .logo2{
+    position: absolute;
+    top: 0;
+    width: 50%;
+}
+.container .img1{
+    left: 0;
+}
+.container .img2{
+    right: 0;
+}
+.container .img1 img,
+.container .img2 img{
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+.container .img1 img{
+    width: 500px;
+    height: 400px;
+}
+.container .img2 img{
+    width: 700px;
+    height: 200px;
+}
+
+
+/*  FINAL LOGO BLACK BG,
+    FINAL LOGO GRAY */
+.final-logo-black-bg{
+    background: #000;
+}
+.color .container .img1 img,
+.color .container .img2 img{
+    top: 30%;
+}
+.color .container .img3{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.color .container .img3{
+    width: 60%;
+    height: 30%;
+}
+
+
+/* GNB */
+.controller{
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    z-index: 100;
+    margin: 0;
+    margin-top: -92px;
+    padding: 0;
+    width: 14px;
+    list-style: none;
+}
+.controller li{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+.controller li:last-child{
+    margin-bottom: 0;
+}
+.controller li a{
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+    background: #452b19;
+    transform: scale(0.5);
+    border-radius: 50%;
+}
+.controller li a.on{
+    background: #ccd5ae;
+    transform: scale(1);
 }

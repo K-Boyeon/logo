@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+
+    <script src="./js/main.js"></script>
 </head>
 <body>
+
+    <!-- GNB -->
+
+    <ul class="controller">
+        <li><a href="#">button1</a></li>
+        <li><a href="#">button2</a></li>
+        <li><a href="#">button3</a></li>
+        <li><a href="#">button4</a></li>
+        <li><a href="#">button5</a></li>
+        <li><a href="#">button6</a></li>
+        <li><a href="#">button7</a></li>
+    </ul>
+    
     <!-- INTRO -->
-    <div class="intro">
+    <div class="section intro" id="page1">
 
         <div class="circle one"></div>
         <div class="circle two"></div>
@@ -21,7 +40,7 @@
 
     
     <!-- LOGO IDENTITY -->
-    <div class="section identity">
+    <div class="section identity" id="page2">
 
         <div class="title">
             <h1>01.</h1>
@@ -52,16 +71,18 @@
         </div>
         
         <div class="content">
-            <p>에스프레소로 다양한 커피를 만들 수 있구나에서 생각한 로고디자인 입니다.</p>
-            <p>에스프레소는 카페인 양이 적고, 커피의 순수한 맛을 느낄 수 있습니다.</p>
-            <p>에스프레소와 섞는 액체에 따라 색의 변화를 표현 해 보고 싶었습니다.  </p>
+            <div class="text-group">
+                <p>에스프레소로 다양한 커피를 만들 수 있구나에서 생각한 로고디자인 입니다.</p>
+                <p>에스프레소는 카페인 양이 적고, 커피의 순수한 맛을 느낄 수 있습니다.</p>
+                <p>에스프레소와 섞는 종류에 따라 색의 변화를 표현 해 보고 싶었습니다.  </p>
+            </div>
         </div>
 
     </div>
 
 
     <!-- Symbol Construction -->
-    <div class="section contruction">
+    <div class="section contruction" id="page3">
 
         <div class="title">
             <h1>02.</h1>
@@ -77,6 +98,77 @@
         </div>
 
 
+    </div>
+
+
+    <!-- Color -->
+    <div class="section color" id="page4">
+
+        <div class="title">
+            <h1>03.</h1>
+            <h2>Color</h2>
+        </div>
+
+        <div class="img">
+            <img src="./1x/Asset 17.png" alt="">
+        </div>
+
+    </div>
+
+
+    <!-- Final Logo -->
+    <div class="section final-logo" id="page5">
+
+        <div class="title">
+            <h1>04.</h1>
+            <h2>Final Logo</h2>
+        </div>
+
+        <div class="container">
+            <div class="logo2 img1">
+                <img src="./1x/Asset 2.png" alt="">
+            </div>
+            <div class="logo2 img2">
+                <img src="./1x/Asset 1.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- Final Logo black bg -->
+    <div class="section final-logo-black-bg color" id="page6">
+
+        <div class="container">
+            <div class="logo2 img1">
+                <img src="./1x/Asset 9.png" alt="">
+            </div>
+            <div class="logo2 img2">
+                <img src="./1x/Asset 10.png" alt="">
+            </div>
+            <div class="logo2 img3">
+                <img src="./1x/Asset 18.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- Final Logo gray -->
+    <div class="section final-logo-gray color" id="page7">
+
+        <div class="container">
+            <div class="logo2 img1">
+                <img src="./1x/Asset 7.png" alt="">
+            </div>
+            <div class="logo2 img2">
+                <img src="./1x/Asset 8.png" alt="">
+            </div>
+            <div class="logo2 img3">
+                <img src="./1x/Asset 19.png" alt="">
+            </div>
+        </div>
+        
     </div>
 
 </body>
