@@ -49,11 +49,11 @@ $(function(){
 
         if(delta > 0){
             if(n > 0){
-                n--
+                n--;
             }
         }else{
-            if(n < 6){
-                n++
+            if(n < 5){
+                n++;
             }
         }
 
@@ -63,5 +63,16 @@ $(function(){
             $(".controller li").find("a").removeClass("on");
             $(".controller li").eq(n).find("a").addClass("on");
         });
+    });
+
+    const spyEls = document.querySelectorAll("div.scroll-spy");
+    spyEls.forEach(function(spyEl){
+        new ScrollMagic
+        .Scene({
+            triggerElement : spyEl,
+            triggerHook : 0.5
+        })
+        .setClassToggle(spyEl, "show")
+        .addTo(new ScrollMagic.Controller());
     });
 });
