@@ -108,11 +108,23 @@ img{
 }
 .intro img{
     position: absolute;
-    top: 48%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 400px;
+    width: 50%;
+    height: 40%;
+}
+.intro .logo{
+    width: 14%;
+    height: 32%;
+}
+.intro .logo-text{
+    position: absolute;
+    top: 66%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 19%;
 }
 .intro img:last-child{
     position: absolute;    
@@ -173,57 +185,61 @@ img{
     justify-content: center;
     align-items: center;
     width: 70%;
-    height: 8%;
+    height: 10%;
 }
-.identity .content .text-group p:first-child{
+.identity .content .text-group p:nth-child(1){
     font-weight: bold;
     font-size: 24px;
+}
+.identity .content .text-group p:nth-child(2){
+    margin-bottom: 50px;
+}
+.identity .content .text-group p:nth-child(3){
+    line-height: 30px;
 }
 
 
 /* SYMBOL CONSTRUCTION */
 .contruction .img{
     position: absolute;
-    top: 15%;
+    top: 17%;
     right: 13%;
     width: 36%;
     height: 75%;
 }
 .contruction .note{
     position: absolute;
-    top: 38%;
-    left: 13%;
-    width: 30%;
+    top: 33%;
+    left: 22%;
+    width: 100%;
+    height: 20%;
     line-height: 30px;
+}
+.contruction .note p{
+    margin-bottom: 20px;
 }
 .contruction .progress{
     position: absolute;
-    bottom: 0;
-    left: 3%;
-    width: 50%;
+    top: 27%;
+    left: 10%;
+    width: 40%;
     height: 50%;
 }
 .contruction .progress .progress-img{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .contruction .progress .progress-img img{
-    width: 15%;
-    height: 40%;
-    margin-right: 20px;
+    width: 25%;
+    height: 45%;
+    margin-right: 10px;
 }
 .contruction .progress .progress-img img:nth-child(3){
-    width: 12%;
+    /* width: 12%; */
 }
 .contruction .progress .progress-img img:last-child{
     margin-right: 0;
-}
-.contruction .progress .progress-img .material-icons{
-    width: 5%;
-    height: 5%;
-    font-size: 30px;
-    margin-right: 20px;
 }
 .contruction .progress .progress-img .material-icons:last-child{
     margin-right: 0;
@@ -353,13 +369,24 @@ img{
 
 /* FOOTER */
 .footer{
-    height: 100px;
+    position: relative;
+    height: 15%;
     background: #777;
 }
-.footer p{
+.footer .footer_text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20%;
+}
+.footer .footer_text p{
     color: #fff;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 10px;
+}
+.footer .footer_text p:last-child,
+.footer .footer_text p:last-child span{
+    letter-spacing: 2px;
+    font-size: 10px;
 }
