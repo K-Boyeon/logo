@@ -177,25 +177,25 @@ img{
 }
 .identity .content .text-group{
     position: absolute;
-    top: 35%;
+    top: 37%;
     left: 8%;
 }
 .identity .content .text-group p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 70%;
-    height: 10%;
+    height: 5%;
 }
-.identity .content .text-group p:nth-child(1){
+.identity .content .text-group > p:nth-child(1){
+    text-align: center;
     font-weight: bold;
     font-size: 24px;
+    margin-bottom: 20px;
 }
-.identity .content .text-group p:nth-child(2){
-    margin-bottom: 50px;
-}
-.identity .content .text-group p:nth-child(3){
+.identity .content .text-group .title_2{
+    text-align: left;
     line-height: 30px;
+}
+.identity .content .text-group .title_2{
+    width: 95%;
 }
 
 
@@ -207,42 +207,68 @@ img{
     width: 36%;
     height: 75%;
 }
-.contruction .note{
-    position: absolute;
-    top: 33%;
-    left: 22%;
-    width: 100%;
-    height: 20%;
-    line-height: 30px;
-}
-.contruction .note p{
-    margin-bottom: 20px;
-}
 .contruction .progress{
     position: absolute;
-    top: 27%;
+    top: 29%;
     left: 10%;
     width: 40%;
-    height: 50%;
+    height: 65%;
 }
-.contruction .progress .progress-img{
-    /* display: flex;
+.contruction .progress .note{
+    position: relative;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
-.contruction .progress .progress-img img{
+.contruction .progress .note img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 30%;
+}
+.contruction .progress .note p{
+    position: absolute;
+    top: 7%;
+    right: 15%;
+    width: 60%;
+}
+.contruction .progress .note_2{
+    position: absolute;
+    top: 28%;
+    left: 0;
+}
+.contruction .progress .note_2 img,
+.contruction .progress .note_3 img{
+    left: -2.5%;
     width: 25%;
-    height: 45%;
-    margin-right: 10px;
+    height: 35%;
 }
-.contruction .progress .progress-img img:nth-child(3){
-    /* width: 12%; */
+.contruction .progress .note_2 .esp{
+    position: relative;
+    top: 2%;
+    left: 25%;
 }
-.contruction .progress .progress-img img:last-child{
-    margin-right: 0;
+.contruction .progress .note_2 .esp img{
+    position: absolute;
+    top: 8%;
+    left: 48%;
+    width: 9%;
+    height: 16%;
 }
-.contruction .progress .progress-img .material-icons:last-child{
-    margin-right: 0;
+.contruction .progress .note_2 .esp p{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 45%;
+}
+.contruction .progress .note_3{
+    position: absolute;
+    top: 60%;
+    left: 0;
+}
+.contruction .progress .note_3 p{
+    margin-top: 20px;
 }
 
 
@@ -258,7 +284,7 @@ img{
     height: 100%;
 }
 #page4 .container .img1{
-    background: url("../1x/5965465-logo2.jpg");
+    background: url("../img/5965465-logo2.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -298,7 +324,7 @@ img{
     height: 100%;
 }
 .final-logo .container .img1{
-    background: url("../1x/5561299-logo2.jpg");
+    background: url("../img/5561299-logo2.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
