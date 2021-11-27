@@ -17,6 +17,7 @@ $(function(){
     });
     $(window).trigger("resize");
 
+    // MENU CLICK
     $(".controller li a").click(function(e){
         e.preventDefault();
         n = $(this).parent().index();
@@ -28,6 +29,7 @@ $(function(){
         });
     });
 
+    // SCROLL
     $(window).scroll(function(){
         t = $(window).scrollTop();
 
@@ -42,6 +44,7 @@ $(function(){
         }
     });
 
+    // MOUSEWHEEL
     $(".section").mousewheel(function(e, delta){
         if($("html, bady").is(":animated")){
             return false;
@@ -65,6 +68,7 @@ $(function(){
         });
     });
 
+    // SCROLLMAGIC
     const spyEls = document.querySelectorAll("div.scroll-spy");
     spyEls.forEach(function(spyEl){
         new ScrollMagic
@@ -76,6 +80,7 @@ $(function(){
         .addTo(new ScrollMagic.Controller());
     });
 
+    // DATE
     const thisYear = document.querySelector(".this-year");
     thisYear.textContent = new Date().getFullYear();
 });
