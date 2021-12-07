@@ -154,6 +154,7 @@ img{
     height: 60%;
 }
 .identity  .container .logo{
+    position: relative;
     width: 200px;
     height: 200px;
     margin-right: 50px;
@@ -163,9 +164,17 @@ img{
     height: 170px;
 }
 .identity .container .logo .text{
+    position: absolute;
+    top: 85%;
+    left: 2%;
     font-size: 16px;
     margin-top: 30px;
-}   
+}  
+.identity .container .cup .text:last-child{
+    position: absolute;
+    top: 85%;
+    left: -15%;
+}
 .identity .container .logo .text p{
     text-align: center;
 }
@@ -177,7 +186,7 @@ img{
 }
 .identity .content .text-group{
     position: absolute;
-    top: 37%;
+    top: 33%;
     left: 8%;
 }
 .identity .content .text-group p{
@@ -185,7 +194,7 @@ img{
     height: 5%;
 }
 .identity .content .text-group > p:nth-child(1){
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 20px;
@@ -193,9 +202,8 @@ img{
 .identity .content .text-group .title_2{
     text-align: left;
     line-height: 30px;
-}
-.identity .content .text-group .title_2{
     width: 95%;
+    margin-top: 60px;
 }
 
 
@@ -284,7 +292,7 @@ img{
     height: 100%;
 }
 #page4 .container .img1{
-    background: url("../img/5965465-logo2.jpg");
+    background: url("../img/5965465-logo3.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -310,7 +318,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 70%;
     height: 50%;
 }
 
@@ -324,7 +332,7 @@ img{
     height: 100%;
 }
 .final-logo .container .img1{
-    background: url("../img/5561299-logo2.jpg");
+    background: url("../img/5561299-logo3.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -351,9 +359,9 @@ img{
 #page5 .palette img{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 47%;
     transform: translate(-50%, -50%);
-    width: 85%;
+    width: 70%;
     height: 45%;
 }
 
