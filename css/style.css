@@ -190,6 +190,7 @@ img{
     left: 8%;
 }
 .identity .content .text-group p{
+    position: relative;
     width: 70%;
     height: 5%;
 }
@@ -198,6 +199,19 @@ img{
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 20px;
+}
+.identity .content .text-group p span{
+    font-size: 24px;
+}
+.identity .content .text-group .line{
+    position: absolute;
+    top: 13px;
+    left: 1px;
+    width: 70px;
+    height: 17px;
+    background: #d4a373;
+    z-index: -1;
+    opacity: .7;
 }
 .identity .content .text-group .title_2{
     text-align: left;
